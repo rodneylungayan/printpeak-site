@@ -13,7 +13,7 @@
 - **Contact details:** obvious placeholders
 - **Extras:** sticky mobile contact bar, back to top button
 - **Tone:** bold and energetic
-- **Domain:** printpeak.example (placeholder)
+- **Domain:** https://printpeak.mactandigital.com (live preview)
 - **Form:** left blank for a third-party embed
 - **Photos:** free Unsplash stock (see public/images/CREDITS.md)
 - **Size chart:** sample values, marked to replace

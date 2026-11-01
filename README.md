@@ -1,6 +1,8 @@
 # PrintPeak Sublimation — sample website
 
-![PrintPeak share image](docs/og-preview.png)
+**Live preview: [printpeak.mactandigital.com](https://printpeak.mactandigital.com/)**
+
+[![PrintPeak share image](docs/og-preview.png)](https://printpeak.mactandigital.com/)
 
 A ready-to-customize, one-page website for a **full sublimation printing business**
 (jerseys, cycling and esports wear, hoodies, mugs, lanyards, banners).
@@ -89,13 +91,14 @@ scripts/        todos and asset checks
 ## Deploy
 
 1. Import the repo into [Vercel](https://vercel.com/new) (framework: Next.js, no environment variables needed).
-2. Add your domain and update `url` in `src/content/site.ts`.
+2. Add your domain and update `url` in `src/content/site.ts` (this demo uses `https://printpeak.mactandigital.com`).
 3. Turn on **Web Analytics** and **Speed Insights** in the Vercel project.
 4. Submit `https://your-domain/sitemap.xml` in Google Search Console.
 5. Test link previews with the Facebook Sharing Debugger and LinkedIn Post Inspector.
 
 ## Credits
 
+- Designed and built by [Mactan Digital](https://mactandigital.com).
 - Photos: [Unsplash](https://unsplash.com), under the [Unsplash License](https://unsplash.com/license). See `public/images/CREDITS.md`.
 - Fonts: Archivo Black, Inter and JetBrains Mono (SIL Open Font License), via Google Fonts.
 - Layout inspired by the look of a local Philippine print shop site. No code, text or images were copied.

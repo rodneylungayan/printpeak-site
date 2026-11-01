@@ -10,7 +10,7 @@ copy or images were copied.
 - Name: PrintPeak Sublimation · Tagline: "Full-color prints that never fade."
 - Products: team jerseys, cycling and esports wear, hoodies and long sleeves, mugs and tumblers, lanyards and caps, banners and flags
 - Area: Philippines, ships nationwide · Main action: Get a Quote (`site.quotePath` = `/#contact`)
-- Domain: printpeak.example (placeholder)
+- Domain (live preview): https://printpeak.mactandigital.com
 
 ## Voice
 - Bold and energetic, but plain English. Short sentences, everyday words, one idea per sentence.

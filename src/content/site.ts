@@ -38,7 +38,7 @@ export const site: SiteInfo = {
   tagline: "Full-color prints that never fade.",
   description:
     "Custom sublimation printing in the Philippines. Team jerseys, hoodies, mugs, lanyards and banners, printed in full color edge to edge.",
-  url: "https://printpeak.example", // TODO: real domain
+  url: "https://printpeak.mactandigital.com",
   locale: "en_PH",
   lang: "en-PH",
   country: "PH",
