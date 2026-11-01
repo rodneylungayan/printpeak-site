@@ -1,0 +1,123 @@
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(
+      var(--pattern, 45deg),
+      transparent 0 14px,
+      color-mix(in srgb, var(--color-accent) 10%, transparent) 14px 28px
+    ),
+    var(--color-surface-2);
+}
+
+.media img {
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease);
+}
+
+.iconWrap {
+  display: grid;
+  place-items: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--color-accent) 18%, transparent);
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.code {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+}
+
+.body {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--card-pad);
+}
+
+.text {
+  color: var(--color-muted);
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(var(--lift));
+    box-shadow: var(--hover-shadow);
+    border-color: var(--color-accent);
+  }
+
+  .card:hover .iconWrap {
+    transform: scale(1.08) rotate(-6deg);
+    background: var(--color-dark);
+  }
+
+  .card:hover .media img {
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .card:hover .iconWrap,
+  .card:hover .media img {
+    transform: none;
+  }
+}
+
+.note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding: var(--card-pad);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.note p {
+  font-weight: 600;
+  max-width: 36rem;
+}
