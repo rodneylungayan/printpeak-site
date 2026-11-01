@@ -54,7 +54,7 @@ export default function Hero() {
           ) : (
             <JerseyArt />
           )}
-          <span className={`label ${styles.chip} ${styles.chipTop}`}>PP-01 · Team jersey</span>
+          <span className={`label ${styles.chip} ${styles.chipTop}`}>Heat press · In the fabric</span>
           <span className={`label ${styles.chip} ${styles.chipBottom}`}>
             <Icon name="check" size={14} /> Full color, every inch
           </span>

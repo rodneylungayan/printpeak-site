@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      number="04"
+      number="05"
       label={contactIntro.label}
       title={contactIntro.title}
       accent={contactIntro.accent}

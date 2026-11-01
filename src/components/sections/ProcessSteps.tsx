@@ -10,7 +10,7 @@ export default function ProcessSteps() {
   return (
     <Section
       id="process"
-      number="03"
+      number="04"
       label={processIntro.label}
       title={processIntro.title}
       accent={processIntro.accent}

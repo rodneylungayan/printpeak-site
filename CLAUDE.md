@@ -32,7 +32,7 @@ Related phrases used in copy: sublimated jerseys, custom mugs, personalized lany
 ## How to change things
 - Reorder or remove home sections: `src/config/sections.ts`
 - Add a nav link or page: `src/content/navigation.ts` (also feeds footer and sitemap)
-- Copy: `src/content/home.ts` and `src/content/site.ts`
+- Copy: `src/content/home.ts`, `src/content/site.ts`, size charts in `src/content/sizes.ts` (sample values)
 - Modules on/off: `src/config/features.ts`
 - Quote form embed: `src/components/FormEmbed.tsx`
 

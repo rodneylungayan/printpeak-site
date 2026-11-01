@@ -1,7 +1,7 @@
 .wrap {
   position: relative;
   overflow: hidden;
-  background: var(--color-surface);
+  background: var(--color-bg);
 }
 
 .wrap > section {
@@ -55,7 +55,7 @@
 
 @media (hover: hover) {
   .row:hover {
-    background: var(--color-bg);
+    background: var(--color-surface);
     padding-inline: var(--space-4);
   }
 }

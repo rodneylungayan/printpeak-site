@@ -1,0 +1,218 @@
+.tool {
+  background: var(--color-bg);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--card-pad);
+  border-bottom: var(--border);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+  flex: 1 1 18rem;
+  max-width: 28rem;
+}
+
+.fieldLabel {
+  color: var(--color-muted);
+}
+
+.select {
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-6) var(--space-2) var(--space-4);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(45deg, transparent 50%, var(--color-ink) 50%) calc(100% - 1.15rem) 50% / 0.4rem 0.4rem no-repeat,
+    linear-gradient(-45deg, transparent 50%, var(--color-ink) 50%) calc(100% - 0.75rem) 50% / 0.4rem 0.4rem no-repeat,
+    var(--color-surface);
+  font-weight: 600;
+  appearance: none;
+  cursor: pointer;
+}
+
+.units {
+  display: inline-flex;
+  padding: var(--space-1);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-pill);
+}
+
+.unit {
+  min-height: var(--tap);
+  padding-inline: var(--space-4);
+  border-radius: var(--radius-pill);
+  font-size: var(--small);
+  font-weight: 600;
+  color: var(--color-muted);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.unit[aria-pressed="true"] {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+@media (hover: hover) {
+  .unit[aria-pressed="false"]:hover {
+    color: var(--color-ink);
+  }
+}
+
+.body {
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  .body {
+    grid-template-columns: 20rem 1fr;
+  }
+}
+
+.diagram {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+  padding: var(--card-pad);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+}
+
+.diagramLabel,
+.cut {
+  color: var(--color-on-dark-muted);
+}
+
+.tee {
+  width: 100%;
+  max-width: 16rem;
+  margin-block: var(--space-4);
+}
+
+.garment {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.cut {
+  color: var(--color-accent-2);
+}
+
+.howTo {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  font-size: var(--small);
+  color: var(--color-on-dark-muted);
+}
+
+.howTo li {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.howTo strong {
+  color: var(--color-on-dark);
+}
+
+.howNum {
+  font-family: var(--font-mono);
+  color: var(--color-accent-2);
+  flex-shrink: 0;
+}
+
+.tableWrap {
+  padding: var(--card-pad);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: var(--space-4);
+  color: var(--color-muted);
+}
+
+.caption > span {
+  display: block;
+}
+
+.captionTitle {
+  margin-top: var(--space-1);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: var(--border);
+}
+
+.table thead th {
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table thead th:first-child {
+  border-top-left-radius: var(--radius-sm);
+}
+
+.table thead th:last-child {
+  border-top-right-radius: var(--radius-sm);
+}
+
+.thNum {
+  color: var(--color-accent-2);
+  margin-right: var(--space-1);
+}
+
+.table tbody th {
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.table tbody tr {
+  transition: background-color var(--dur-fast) var(--ease);
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--color-surface);
+}
+
+@media (hover: hover) {
+  .table tbody tr:hover {
+    background: var(--color-accent-soft);
+  }
+}
+
+.note {
+  margin-top: var(--space-4);
+  color: var(--color-muted);
+}

@@ -24,7 +24,7 @@ export type Product = {
   title: string;
   text: string;
   icon: IconName;
-  image?: { src: string; alt: string }; // TODO: add real product photos
+  image?: { src: string; alt: string }; // Sample stock photos for now. TODO: replace with your own product photos
 };
 
 export type Reason = { title: string; text: string };
@@ -38,6 +38,8 @@ export const hero: HeroContent = {
     "We print your design right into the fabric. Jerseys, hoodies, mugs, lanyards and more. Full color on every inch, and it won't crack or peel.",
   primary: { label: "Get a Quote", href: "/#contact" },
   secondary: { label: "See Products", href: "/#products" },
+  // Sample stock photo (Unsplash). TODO: replace with a photo of your own shop.
+  image: { src: "/images/hero/hero.webp", alt: "A print shop worker getting a shirt ready on a heat press" },
 };
 
 export const marquee: string[] = [
@@ -63,36 +65,42 @@ export const products: Product[] = [
     title: "Team Jerseys",
     text: "Basketball, volleyball and football sets. Names and numbers are printed in, not stuck on.",
     icon: "jersey",
+    image: { src: "/images/projects/pp-01.webp", alt: "Rack of bright blue and red team jerseys" },
   },
   {
     code: "PP-02",
     title: "Cycling & Esports Wear",
     text: "Race-fit tops and gaming jerseys with sharp, full-body designs.",
     icon: "cycling",
+    image: { src: "/images/projects/pp-02.webp", alt: "Cyclist in a fitted blue cycling jersey on the road" },
   },
   {
     code: "PP-03",
     title: "Hoodies & Long Sleeves",
     text: "All-over printed hoodies, rash guards and long sleeves for teams and crews.",
     icon: "hoodie",
+    image: { src: "/images/projects/pp-03.webp", alt: "Person in a grey pullover hoodie, seen from the back" },
   },
   {
     code: "PP-04",
     title: "Mugs & Tumblers",
     text: "Photo-quality prints on mugs, tumblers and bottles. Great for gifts and giveaways.",
     icon: "mug",
+    image: { src: "/images/projects/pp-04.webp", alt: "Two white mugs with printed text" },
   },
   {
     code: "PP-05",
     title: "Lanyards & Caps",
     text: "Custom lanyards for events and offices, plus printed caps to match.",
     icon: "lanyard",
+    image: { src: "/images/projects/pp-05.webp", alt: "Person wearing a printed lanyard with an ID badge" },
   },
   {
     code: "PP-06",
     title: "Banners & Flags",
     text: "Bright, light flags and banners for games, booths and shop fronts.",
     icon: "flag",
+    image: { src: "/images/projects/pp-06.webp", alt: "Rows of colorful flag banners against a blue sky" },
   },
 ];
 
