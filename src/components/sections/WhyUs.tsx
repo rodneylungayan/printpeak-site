@@ -12,12 +12,12 @@ export default function WhyUs() {
       </span>
       <Section
         id="why-us"
-        number="02"
+        number="03"
         label={whyIntro.label}
         title={whyIntro.title}
         accent={whyIntro.accent}
         intro={whyIntro.intro}
-        tone="surface"
+        tone="base"
       >
         <ol role="list" className={styles.list}>
           {reasons.map((r, i) => (

@@ -19,6 +19,7 @@ export type SitemapPage = {
 
 export const navItems: NavItem[] = [
   { label: "Products", href: "/#products", inHeader: true, inFooter: true },
+  { label: "Size Guide", href: "/#size-guide", inHeader: true, inFooter: true },
   { label: "Why Us", href: "/#why-us", inHeader: true, inFooter: true },
   { label: "Process", href: "/#process", inHeader: true, inFooter: true },
   { label: "Contact", href: "/#contact", inHeader: true, inFooter: true },

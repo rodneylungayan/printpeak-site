@@ -121,3 +121,25 @@
   font-weight: 600;
   max-width: 36rem;
 }
+
+.iconBadge {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  display: grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+@media (hover: hover) {
+  .card:hover .iconBadge {
+    transform: rotate(-8deg) scale(1.1);
+    background: var(--color-dark);
+  }
+}

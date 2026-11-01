@@ -28,7 +28,12 @@ export default function Products() {
           >
             <div className={styles.media}>
               {p.image ? (
-                <Image src={p.image.src} alt={p.image.alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <>
+                  <Image src={p.image.src} alt={p.image.alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  <span className={styles.iconBadge} aria-hidden="true">
+                    <Icon name={p.icon} size={22} />
+                  </span>
+                </>
               ) : (
                 <span className={styles.iconWrap}>
                   <Icon name={p.icon} size={56} />
