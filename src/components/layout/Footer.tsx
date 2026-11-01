@@ -84,6 +84,12 @@ export default async function Footer() {
           <p>
             © {year} {site.name}. All rights reserved.
           </p>
+          <p>
+            Designed and built by{" "}
+            <a href={site.builtBy.url} className={`link ${styles.credit}`} target="_blank" rel="noopener">
+              {site.builtBy.name}
+            </a>
+          </p>
           <a href="#main" className="link">
             Back to top ↑
           </a>

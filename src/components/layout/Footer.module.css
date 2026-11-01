@@ -69,3 +69,8 @@
 .bottom a {
   color: var(--color-on-dark);
 }
+
+.bottom .credit {
+  color: var(--color-accent-2);
+  font-weight: 600;
+}

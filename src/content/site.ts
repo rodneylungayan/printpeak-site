@@ -28,6 +28,7 @@ export type SiteInfo = {
   address: string;
   quotePath: string;
   twitterHandle?: string;
+  builtBy: { name: string; url: string };
   social: SocialLinks;
 };
 
@@ -47,6 +48,7 @@ export const site: SiteInfo = {
   phoneHref: "+639000000000", // TODO: real phone in international format
   address: "Your City, Philippines", // TODO: real address or city
   quotePath: "/#contact",
+  builtBy: { name: "Mactan Digital", url: "https://mactandigital.com" },
   twitterHandle: undefined, // TODO: add "@handle" if the business has an X account
   social: {
     // TODO: add real links. Empty links are hidden, so nothing points to a dead page.
