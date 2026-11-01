@@ -1,0 +1,148 @@
+/*
+  tokens.css — the ONLY place brand hex values live in CSS.
+  Change the look of the whole site here (plus src/lib/fonts.ts and src/lib/brand.ts).
+
+  Breakpoints (CSS vars cannot be used inside @media, so use these numbers everywhere):
+    480px  small phones → large phones
+    768px  phones → tablets   (mobile CTA bar hides above this)
+    1024px tablets → laptops  (full nav shows above this)
+    1280px laptops → desktops
+*/
+
+:root {
+  /* ---------- Colors: default preset "peak" (royal blue on warm off-white) ---------- */
+  --color-bg: #f6f3ee;
+  --color-surface: #ffffff;
+  --color-surface-2: #ece7df;
+  --color-ink: #14161c;
+  --color-muted: #5a5f6b;
+  --color-faint: #a9adb6;
+  --color-border: #ddd7cd;
+  --color-accent: #1e40d8;
+  --color-accent-hover: #1733b0;
+  --color-accent-soft: #e3e8fb;
+  --color-on-accent: #ffffff;
+  --color-accent-2: #f5b700;
+  --color-dark: #0f172a;
+  --color-dark-2: #1b2540;
+  --color-on-dark: #f6f3ee;
+  --color-on-dark-muted: #b8bfcf;
+  --color-success: #15803d;
+  --color-messenger: #0866ff;
+  --color-focus: #f5b700;
+
+  /* ---------- Type: families come from next/font (src/lib/fonts.ts) ---------- */
+  --font-heading: var(--font-archivo-black), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  /* Fluid type scale: change one line, every screen follows */
+  --text-xs: clamp(0.6875rem, 0.66rem + 0.1vw, 0.75rem);
+  --text-sm: clamp(0.8125rem, 0.79rem + 0.12vw, 0.875rem);
+  --text-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.06rem + 0.3vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
+  --text-4xl: clamp(2.25rem, 1.6rem + 2.8vw, 3.75rem);
+  --text-5xl: clamp(2.5rem, 1.6rem + 4vw, 4.75rem);
+  --text-6xl: clamp(2.75rem, 1.5rem + 5.6vw, 6rem);
+
+  --h1: var(--text-6xl);
+  --h2: var(--text-5xl);
+  --h3: var(--text-xl);
+  --h4: var(--text-lg);
+  --body: var(--text-base);
+  --small: var(--text-sm);
+
+  --leading-tight: 0.95;
+  --leading-snug: 1.2;
+  --leading-body: 1.65;
+  --tracking-label: 0.18em;
+  --tracking-tight: -0.01em;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --section-pad: clamp(4rem, 3rem + 5vw, 8rem);
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --container: 1240px;
+  --header-h: 4.5rem;
+  --mobile-bar-h: 4.25rem;
+
+  /* ---------- Shape ---------- */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.375rem;
+  --radius-pill: 999px;
+  --border: 1px solid var(--color-border);
+  --tap: 2.75rem;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06), 0 1px 1px rgb(15 23 42 / 0.04);
+  --shadow-md: 0 8px 24px -8px rgb(15 23 42 / 0.18);
+  --hover-shadow: 0 22px 44px -18px rgb(15 23 42 / 0.32);
+  --lift: -4px;
+
+  /* ---------- Buttons and cards ---------- */
+  --btn-pad-sm: 0.55rem 1rem;
+  --btn-pad-md: 0.85rem 1.4rem;
+  --btn-pad-lg: 1.05rem 1.8rem;
+  --card-pad: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+
+  /* ---------- Motion ---------- */
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 900ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --transition: var(--dur) var(--ease);
+  --marquee-speed: 38s;
+}
+
+/* ---------- Preset: crimson (closest to a classic red print shop) ---------- */
+[data-theme="crimson"] {
+  --color-accent: #a3101c;
+  --color-accent-hover: #820b15;
+  --color-accent-soft: #f8e3e4;
+  --color-accent-2: #f5b700;
+  --color-dark: #1a1414;
+  --color-dark-2: #2a2020;
+}
+
+/* ---------- Preset: lime (black and lime, sporty, dark) ---------- */
+[data-theme="lime"] {
+  --color-bg: #0e0f12;
+  --color-surface: #17191e;
+  --color-surface-2: #20232a;
+  --color-ink: #f3f4f1;
+  --color-muted: #a4a9b3;
+  --color-faint: #4a4f59;
+  --color-border: #2b2f37;
+  --color-accent: #b6f22e;
+  --color-accent-hover: #c9ff4f;
+  --color-accent-soft: #263211;
+  --color-on-accent: #0e0f12;
+  --color-accent-2: #ffffff;
+  --color-dark: #000000;
+  --color-dark-2: #121418;
+}
+
+/* ---------- Preset: mono (neutral, for quick client demos) ---------- */
+[data-theme="mono"] {
+  --color-bg: #f5f5f4;
+  --color-surface-2: #e7e5e4;
+  --color-border: #d6d3d1;
+  --color-accent: #18181b;
+  --color-accent-hover: #3f3f46;
+  --color-accent-soft: #e4e4e7;
+  --color-accent-2: #f97316;
+  --color-dark: #18181b;
+  --color-dark-2: #27272a;
+}
