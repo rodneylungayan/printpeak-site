@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="PrintPeak Sublimation Co.">
-  <g transform="translate(4 8)">
-    <rect width="48" height="48" rx="11" fill="#1e40d8"/>
-    <path d="M4 38 17 18l6 9 4-5 11 16H4Z" fill="#f5b700"/>
-    <path d="M10 38 24 15l14 23H10Z" fill="#ffffff"/>
-    <path d="m19.5 22.4 4.5-7.4 4.5 7.4-2.3-1.4-2.2 2-2.2-2-2.3 1.4Z" fill="#1e40d8"/>
-    <path d="M36 6.5c2.2 3 3.4 5 3.4 6.6a3.4 3.4 0 0 1-6.8 0c0-1.6 1.2-3.6 3.4-6.6Z" fill="#f5b700"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 64" role="img" aria-label="PrintPeak Sublimation Co.">
+  <g transform="skewX(-8) translate(4 0)" fill-rule="evenodd">
+    <path d="M31 6h17a14 14 0 0 1 0 28h-6v24H31Zm11 10v8h5a4 4 0 0 0 0-8Z" fill="#1e40d8"/>
+    <path d="M8 6h17a14 14 0 0 1 0 28h-6v24H8Zm11 10v8h5a4 4 0 0 0 0-8Z" fill="#14161c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke"/>
   </g>
-  <text x="66" y="36" font-family="'Archivo Black','Arial Black',sans-serif" font-size="27" fill="#14161c" letter-spacing="-0.3">PRINT<tspan fill="#1e40d8">PEAK</tspan></text>
-  <text x="67" y="53" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10" letter-spacing="2.6" fill="#5a5f6b">SUBLIMATION CO.</text>
+  <rect x="80" y="10" width="2.5" height="44" fill="#1e40d8"/>
+  <g font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" font-weight="700" letter-spacing="2.4" fill="#14161c">
+    <text x="92" y="23">PRINTPEAK</text>
+    <text x="92" y="38">SUBLIMATION</text>
+    <text x="92" y="53">CO.</text>
+  </g>
 </svg>

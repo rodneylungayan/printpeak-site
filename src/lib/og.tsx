@@ -58,7 +58,7 @@ export async function renderOg({ eyebrow, title, accent }: { eyebrow: string; ti
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <div
             style={{
-              width: 56,
+              width: 72,
               height: 56,
               borderRadius: 12,
               background: brand.accent,
@@ -66,11 +66,11 @@ export async function renderOg({ eyebrow, title, accent }: { eyebrow: string; ti
               alignItems: "center",
               justifyContent: "center",
               color: brand.onAccent,
-              fontSize: 30,
+              fontSize: 28,
               fontFamily: "Heading",
             }}
           >
-            P
+            PP
           </div>
           <div style={{ fontSize: 34, fontFamily: "Heading", letterSpacing: -1 }}>PRINTPEAK</div>
         </div>
