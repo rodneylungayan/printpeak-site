@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.scrolled {
+  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  height: var(--header-h);
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
+}
+
+.pill {
+  display: flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  background: var(--color-surface);
+  border: var(--border);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--tap);
+  padding-inline: var(--space-4);
+  border-radius: var(--radius-pill);
+  font-size: var(--small);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.navNum {
+  color: var(--color-muted);
+}
+
+@media (hover: hover) {
+  .navLink:hover {
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+  }
+
+  .navLink:hover .navNum {
+    color: var(--color-on-accent);
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cta {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .cta {
+    display: inline-flex;
+  }
+}
+
+.toggle {
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: var(--radius-sm);
+  border: var(--border);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+@media (min-width: 1024px) {
+  .toggle {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  background: var(--color-bg);
+  padding: var(--space-6) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  overflow-y: auto;
+}
+
+.menu[hidden] {
+  display: none;
+}
+
+.menuList {
+  display: grid;
+  border-top: var(--border);
+}
+
+.menuLink {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding-block: var(--space-4);
+  border-bottom: var(--border);
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    display: none !important;
+  }
+}

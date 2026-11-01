@@ -1,0 +1,66 @@
+.steps {
+  display: grid;
+  gap: var(--space-4);
+  counter-reset: step;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.step {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: var(--card-pad);
+  background: var(--color-dark-2);
+  border: 1px solid color-mix(in srgb, var(--color-on-dark) 10%, transparent);
+  border-radius: var(--radius-lg);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.num {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  line-height: 1;
+  color: var(--color-accent-2);
+}
+
+.title {
+  font-size: var(--text-lg);
+  color: var(--color-on-dark);
+}
+
+.text {
+  color: var(--color-on-dark-muted);
+  font-size: var(--small);
+}
+
+@media (hover: hover) {
+  .step:hover {
+    transform: translateY(var(--lift));
+    border-color: var(--color-accent-2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step:hover {
+    transform: none;
+  }
+}
+
+.cta {
+  margin-top: var(--space-7);
+}

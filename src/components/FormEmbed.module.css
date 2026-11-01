@@ -1,0 +1,38 @@
+.wrap {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-radius: var(--radius-lg);
+  padding: var(--card-pad);
+  box-shadow: var(--shadow-md);
+}
+
+.embed {
+  min-height: 18rem;
+  display: grid;
+}
+
+.todo {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: var(--space-6);
+  border: 2px dashed var(--color-faint);
+  border-radius: var(--radius-md);
+  color: var(--color-muted);
+}
+
+.fallback {
+  display: grid;
+  align-content: center;
+  gap: var(--space-4);
+}
+
+.text {
+  color: var(--color-muted);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
